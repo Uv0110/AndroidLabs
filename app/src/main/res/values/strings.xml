@@ -2,4 +2,19 @@
     <string name="app_name">Lab1</string>
     <string name="hello_message">Hello World!</string>
     <string name="ButtonText">I\’m a button</string>
+    <string name="login">login</string>
+    <string name="login_name">login name</string>
+    <string name="password">password</string>
+    <string name="RadioButton">Radio Button</string>
+    <string name="CheckBox">Check Box</string>
+    <string name="Switch">What does this do?</string>
+    <string name="dialog_title">Confirm to exit</string>
+    <string name="dialog_message">Are you sure you want to exit?</string>
+    <string name="ok">Ok</string>
+    <string name="Response">Here is my response</string>
+    <string name="Cancel">Cancel</string>
+    <string name="switch_on">Switch is on</string>
+    <string name="switch_off">Switch is off</string>
+
+
 </resources>
