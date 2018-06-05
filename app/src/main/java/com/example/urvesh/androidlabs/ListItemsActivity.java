@@ -1,5 +1,6 @@
 package com.example.urvesh.androidlabs;
 
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -43,6 +44,8 @@ public class ListItemsActivity extends Activity {
                 startActivityForResult(takepicIntent,26);
             }
         });
+
+
 
 
 
