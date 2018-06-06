@@ -16,6 +16,7 @@
     <string name="Cancel">Cancel</string>
     <string name="switch_on">Switch is on</string>
     <string name="switch_off">Switch is off</string>
+    <string name="send">Send</string>
 
 
 </resources>

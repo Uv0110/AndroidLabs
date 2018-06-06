@@ -12,14 +12,19 @@ import android.widget.Button;
 
 public class StartActivity extends Activity {
     protected static final String ACTIVITY_NAME = "StartActivity";
-
+    Button startbtn;
+    Button startChat;
+    Button weather;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
         Log.i(ACTIVITY_NAME,"In OnCreate()");
-        Button startbtn = (Button) findViewById(R.id.button);
+        startbtn = (Button) findViewById(R.id.button);
+        startChat = findViewById(R.id.buttonChat);
+        weather = findViewById(R.id.buttonWeather);
+
         startbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -28,7 +33,20 @@ public class StartActivity extends Activity {
                 startActivityForResult(intent,50);
             }
         });
+
+        startChat.setOnClickListener(e->{
+            Intent intent = new Intent(StartActivity.this,ChatWindow.class);
+            startActivity(intent);
+        });
+
+        weather.setOnClickListener(e->{
+            Intent intent = new Intent(StartActivity.this,WeatherForecast.class);
+            startActivity(intent);
+        });
+
     }
+
+
 
     protected void onActivityResult(int requestCode, int responseCode){
         if(requestCode == 50){
